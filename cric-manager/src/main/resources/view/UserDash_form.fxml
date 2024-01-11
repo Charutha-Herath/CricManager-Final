@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cric.controller.UserDashFormController">
+   <children>
+      <AnchorPane layoutX="220.0" layoutY="102.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="793.0" prefWidth="1483.0" style="-fx-background-radius: 20; -fx-background-color: #74b9ff;" AnchorPane.bottomAnchor="185.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="217.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <Label layoutX="6.0" layoutY="6.0" prefHeight="74.0" prefWidth="224.0" style="-fx-border-color: black; -fx-border-radius: 20;" text="  User Dashboard">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="userPaneLoader" layoutX="241.0" layoutY="16.0" prefHeight="761.0" prefWidth="1222.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 20;" />
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="115.0" onAction="#btnPlayerOnAction" prefHeight="61.0" prefWidth="213.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text=" Player">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-cricket-player-68.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="220.0" onAction="#btnMatchOnAction" prefHeight="61.0" prefWidth="213.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text="  Match">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-cricket-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="326.0" onAction="#btnCostOnAction" prefHeight="61.0" prefWidth="213.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text="  Cost">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-cost-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <AnchorPane fx:id="idPaneLinkUmpire" layoutX="231.0" layoutY="442.0" prefHeight="44.0" prefWidth="10.0" />
+            <JFXButton buttonType="RAISED" layoutX="64.0" layoutY="708.0" onAction="#btnLogoutOnAction" prefHeight="46.0" prefWidth="104.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text="Log Out">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-logout-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <AnchorPane fx:id="idPaneLinkPlayer" layoutX="231.0" layoutY="124.0" prefHeight="44.0" prefWidth="10.0" />
+            <AnchorPane fx:id="idPaneLinkMatch" layoutX="231.0" layoutY="228.0" prefHeight="44.0" prefWidth="10.0" />
+            <AnchorPane fx:id="idPaneLinkTour" layoutX="231.0" layoutY="334.0" prefHeight="44.0" prefWidth="10.0" />
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="433.0" onAction="#btnUmpireOnAction" prefHeight="61.0" prefWidth="213.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text=" Umpire">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-umpire-68.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="78.0" layoutY="57.0" prefHeight="22.0" prefWidth="18.0" text="Hi">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblLoginUserName" layoutX="96.0" layoutY="58.0" prefHeight="18.0" prefWidth="122.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="22.0" fitWidth="34.0" layoutX="51.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/icons8-waving-hand-emoji-96.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

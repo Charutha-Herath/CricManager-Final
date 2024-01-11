@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1091.0" prefWidth="1760.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cric.controller.AdminDashFormController">
+   <children>
+      <AnchorPane fx:id="idPaneBlurred" layoutX="143.0" layoutY="109.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="791.0" prefWidth="1455.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #74b9ff;" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="139.0" AnchorPane.topAnchor="109.0">
+         <children>
+            <AnchorPane fx:id="AdminUserLoader" layoutX="241.0" layoutY="16.0" prefHeight="761.0" prefWidth="1222.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 20;" />
+            <JFXButton fx:id="idBtnCoach" buttonType="RAISED" layoutX="17.0" layoutY="105.0" onAction="#coachOnAction" prefHeight="61.0" prefWidth="213.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text=" Coach    ">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-coach-50%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="210.0" onAction="#sponsorOnAction" prefHeight="61.0" prefWidth="213.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text=" Sponsor">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-handshake-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="316.0" onAction="#donationOnAction" prefHeight="61.0" prefWidth="213.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text=" Donations">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-add-dollar-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <AnchorPane fx:id="idPaneLinkUser" layoutX="231.0" layoutY="430.0" prefHeight="44.0" prefWidth="10.0" />
+            <JFXButton buttonType="RAISED" layoutX="64.0" layoutY="708.0" onAction="#btnLogOutOnAction" prefHeight="46.0" prefWidth="104.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text="Log Out">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-logout-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <AnchorPane fx:id="idPaneLinkCoach" layoutX="231.0" layoutY="114.0" prefHeight="44.0" prefWidth="10.0" />
+            <AnchorPane fx:id="idPaneLinkSponsor" layoutX="231.0" layoutY="218.0" prefHeight="44.0" prefWidth="10.0" />
+            <AnchorPane fx:id="idPaneLinkDonation" layoutX="231.0" layoutY="325.0" prefHeight="44.0" prefWidth="10.0" />
+            <JFXButton buttonType="RAISED" layoutX="16.0" layoutY="420.0" onAction="#userOnAction" prefHeight="62.0" prefWidth="214.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text="User          ">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-user-80.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="5.0" layoutY="5.0" opacity="0.79" prefHeight="70.0" prefWidth="228.0" style="-fx-border-color: black; -fx-border-radius: 20;" text="      Admin Board">
+               <font>
+                  <Font name="Segoe UI Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="53.0" prefHeight="23.0" prefWidth="26.0" text="Hi ">
+               <font>
+                  <Font name="MS Reference Specialty" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSetUsername" layoutX="99.0" layoutY="53.0" prefHeight="18.0" prefWidth="115.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="26.0" layoutX="50.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/icons8-waving-hand-emoji-96.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

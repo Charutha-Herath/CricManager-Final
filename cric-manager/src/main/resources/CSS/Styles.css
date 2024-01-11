@@ -1,0 +1,14 @@
+.column-header{
+    -fx-background-color: #81D4FA;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    /*-fx-text-fill: white;*/
+}
+
+.table-row-cell:even{
+    -fx-background-color: #dff9fb;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #c7ecee;
+}

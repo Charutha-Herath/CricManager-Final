@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="610.0" prefWidth="709.0" style="-fx-background-color: #dff9fb; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cric.controller.ShowPreUserFormController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="4.0" prefHeight="601.0" prefWidth="694.0" style="-fx-background-color: #dff9fb; -fx-background-radius: 20; -fx-border-radius: 20;">
+         <children>
+            <Label layoutX="8.0" layoutY="-16.0" prefHeight="75.0" prefWidth="205.0" text="Previous Users">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblPreUser" layoutX="7.0" layoutY="38.0" prefHeight="554.0" prefWidth="680.0" stylesheets="@../CSS/Styles.css">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="112.80002021789551" text="UserID" />
+                <TableColumn fx:id="colUName" prefWidth="254.39995574951172" text="Username" />
+                  <TableColumn fx:id="colPwd" prefWidth="130.39996337890625" text="Password" />
+                  <TableColumn fx:id="colSDate" prefWidth="183.20004272460938" text="StartDate" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="lblNewUmpireId" prefHeight="761.0" prefWidth="1222.0" style="-fx-background-color: #dff9fb; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cric.controller.UmpireFormController">
+   <children>
+      <Label layoutX="18.0" layoutY="16.0" prefHeight="120.0" prefWidth="359.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: black;" text=" Manage Umpire">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="28.0" layoutY="162.0" prefHeight="243.0" prefWidth="351.0" style="-fx-background-color: #81D4FA; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="25.0" layoutY="74.0" prefHeight="27.0" prefWidth="108.0" text="Umpire ID  : ">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="11.0" prefHeight="35.0" prefWidth="245.0" text="ADD NEW UMPIRE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="129.0" prefHeight="27.0" prefWidth="108.0" text="Name        : ">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="251.0" layoutY="197.0" onAction="#btnUmpireAddOnAction" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text="ADD  ">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-add-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtUmpireName" layoutX="126.0" layoutY="132.0" prefHeight="26.0" prefWidth="210.0" style="-fx-background-radius: 10;" />
+            <Label fx:id="lblNewCoachId" layoutX="138.0" layoutY="70.0" prefHeight="26.0" prefWidth="98.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblAddUmpireFillAllError" layoutX="128.0" layoutY="159.0" prefHeight="18.0" prefWidth="148.0" textFill="#e41f1f" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="410.0" layoutY="162.0" prefHeight="243.0" prefWidth="351.0" style="-fx-background-color: #81D4FA; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="26.0" layoutY="76.0" prefHeight="27.0" prefWidth="108.0" text="Umpire ID  : ">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="11.0" prefHeight="35.0" prefWidth="245.0" text="UPDATE UMPIRE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="132.0" prefHeight="27.0" prefWidth="108.0" text="Name        : ">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUpdateName" layoutX="125.0" layoutY="134.0" prefHeight="26.0" prefWidth="210.0" style="-fx-background-radius: 10;" />
+            <JFXButton buttonType="RAISED" layoutX="250.0" layoutY="196.0" onAction="#btnUpdateOnAction" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: #17c0eb; -fx-background-radius: 10;" text="UPDATE">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/image/icons8-update-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblUpdateNotFillError" layoutX="126.0" layoutY="163.0" prefHeight="18.0" prefWidth="202.0" textFill="#fa1b1b" />
+            <Label fx:id="lblCoachIdError" layoutX="127.0" layoutY="104.0" prefHeight="18.0" prefWidth="158.0" textFill="#ef1f1f" />
+            <Label fx:id="lblUpdateUmpireId" layoutX="148.0" layoutY="78.0" prefHeight="27.0" prefWidth="124.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblUmpire" layoutX="28.0" layoutY="426.0" prefHeight="302.0" prefWidth="558.0" stylesheets="@../CSS/Styles.css">
+        <columns>
+          <TableColumn fx:id="colUmpireId" prefWidth="99.99996566772461" text="Umpire ID" />
+          <TableColumn fx:id="colUserId" prefWidth="110.4000244140625" text="User ID " />
+            <TableColumn fx:id="colUmpireName" prefWidth="261.59999084472656" text="Name" />
+            <TableColumn fx:id="colDelete" minWidth="2.4000244140625" prefWidth="88.0" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="601.0" layoutY="431.0" prefHeight="151.0" prefWidth="159.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #81D4FA;">
+         <children>
+            <Label layoutX="8.0" layoutY="7.0" prefHeight="46.0" prefWidth="148.0" text="Total Of Umpires ">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotUmpires" layoutX="57.0" layoutY="38.0" prefHeight="99.0" prefWidth="91.0">
+               <font>
+                  <Font name="System Italic" size="67.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

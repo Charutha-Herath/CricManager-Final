@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cric.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="487.0" fitWidth="729.0" opacity="0.36" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/image/cricket-grass-field-vector-illustration.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="paneLoginTP" layoutX="180.0" layoutY="73.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="355.0" style="-fx-background-radius: 30; -fx-background-color: #dff9fb; -fx-border-color: black; -fx-background-radius: 20; -fx-border-radius: 20;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="194.0" AnchorPane.topAnchor="73.0">
+         <children>
+            <JFXButton fx:id="idLodinBtn" buttonType="RAISED" layoutX="157.0" layoutY="213.0" onAction="#loginOnAction" prefHeight="28.0" prefWidth="67.0" style="-fx-background-radius: 10; -fx-background-color: #54a0ff;" text="Login">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <TextField fx:id="txtUsername" layoutX="104.0" layoutY="60.0" prefHeight="37.0" prefWidth="166.0" promptText="              Username" style="-fx-background-radius: 10;" />
+            <PasswordField fx:id="txtPassword" layoutX="103.0" layoutY="135.0" onAction="#loginOnAction2" prefHeight="38.0" prefWidth="166.0" promptText="              Password" style="-fx-background-radius: 10;" />
+            <JFXButton buttonType="RAISED" layoutX="133.0" layoutY="279.0" onAction="#btnSignUpNewUserOnAction" prefHeight="28.0" prefWidth="114.0" style="-fx-background-color: #54a0ff; -fx-background-radius: 10;" text="Sign Up New User">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="btnIdClose" alignment="CENTER" buttonType="RAISED" cancelButton="true" layoutX="303.0" layoutY="13.0" onAction="#btnCloseOnAction" prefHeight="24.0" prefWidth="24.0" text=" ">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@../assets/image/icons8-cancel-40.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="lblIncorrectUP" layoutX="105.0" layoutY="174.0" prefHeight="18.0" prefWidth="202.0" textFill="#f21111" />
+            <ImageView fitHeight="34.0" fitWidth="28.0" layoutX="73.0" layoutY="65.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/icons8-user-90.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="72.0" layoutY="141.0" opacity="0.63" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image/icons8-password-90.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="80.0" fitWidth="87.0" layoutX="637.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/Screenshot%202023-11-26%20200318.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="258.0" layoutY="14.0" prefHeight="51.0" prefWidth="227.0" text="CricManager " textFill="#13449e">
+         <font>
+            <Font name="Constantia Bold" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
